@@ -3,6 +3,7 @@ import torch
 import matplotlib.pyplot as plt
 from torch import nn
 from d2l import torch as d2l
+import chris_package
 
 # 加载数据集
 batch_size = 256
@@ -33,6 +34,6 @@ loss = nn.CrossEntropyLoss(reduction='none')
 
 # 训练模型
 num_epochs, lr = 10, 0.1
-updater = torch.optim.SGD(params, lr=lr)
-d2l.train_ch3(net, train_iter, test_iter, loss, num_epochs, updater)
-plt.show()
+trainer = torch.optim.SGD(params, lr=lr)
+train_loss=chris_package.train_model(net,train_iter,loss,num_epochs,trainer)
+print(train_loss)

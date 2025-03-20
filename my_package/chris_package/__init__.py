@@ -5,5 +5,6 @@ from .utils import (
 )
 
 from .train_utils import (
-    train_model
+    train_model,
+    test_model
 )

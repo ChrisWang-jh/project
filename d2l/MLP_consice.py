@@ -2,6 +2,7 @@
 import torch
 from torch import nn
 from d2l import torch as d2l
+import chris_package
 
 # 定义模型
 net = nn.Sequential(nn.Flatten(),
@@ -23,4 +24,5 @@ trainer = torch.optim.SGD(net.parameters(), lr=lr)
 train_iter, test_iter = d2l.load_data_fashion_mnist(batch_size)
 
 # 训练
-d2l.train_ch3(net, train_iter, test_iter, loss, num_epochs, trainer)
+train_loss=chris_package.train_model(net, train_iter, loss, num_epochs, trainer)
+print(train_loss)

@@ -1,0 +1,10 @@
+README.md
+setup.py
+chris_package/__init__.py
+chris_package/data_utils.py
+chris_package/train_utils.py
+chris_package/utils.py
+chris_package.egg-info/PKG-INFO
+chris_package.egg-info/SOURCES.txt
+chris_package.egg-info/dependency_links.txt
+chris_package.egg-info/top_level.txt

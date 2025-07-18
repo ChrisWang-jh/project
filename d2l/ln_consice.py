@@ -1,5 +1,4 @@
 #导入模块
-import numpy as numpy
 import torch
 from torch.utils import data
 from d2l import torch as d2l

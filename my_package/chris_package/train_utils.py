@@ -16,6 +16,9 @@ def train_model(net, train_iter, loss, num_epochs, trainer):
     return train_loss
 
 def test_model(net,test_iter,loss):
+    '''
+    我加入了准确度测试，该测试模型仅用于分类问题
+    '''
     net.eval()
     test_loss=0
     num_accurate=0
